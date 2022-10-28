@@ -1,4 +1,5 @@
 //import routes, route
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./css/app.css";
 import React from "react";
@@ -8,6 +9,8 @@ import TechnoAdd from "./pages/TechnoAdd.jsx";
 import TechnoList from "./pages/TechnoList";
 
 function App() {
+  const [technos, setTechnos] = useState([]);
+
   return (
     <React.Fragment>
       <Menu />
